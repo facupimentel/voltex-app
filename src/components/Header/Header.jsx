@@ -12,35 +12,7 @@ const Header = ({totalProductos}) => {
     <>
       <NavBar totalProductos={totalProductos} />
 
-      {user?.isLoggedIn && (
-        <>
-          <p
-            style={{
-              backgroundColor: "#242424",
-              color: "#a1ef00",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-
-            }}
-          >
-            Bienvenido {user.name}
-          </p>
-
-          <div style={{
-            display:"flex",
-            gap:"15px",
-            margin:"0px 20px",
-          }}>
-            <button onClick={cargarProductos}>
-              cargar productos a Firestore
-            </button>
-            <button onClick={borrarProductos}>
-              eliminar productos de Firestore
-            </button>
-          </div>
-        </>
-      )}
+      
     </>
   );
 }

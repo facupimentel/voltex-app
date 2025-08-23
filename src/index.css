@@ -6,6 +6,10 @@
 
 body {
   background-color: #1c1c1c;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ESTILOS HEADER */
@@ -13,11 +17,10 @@ body {
 header{
   display: flex;
   justify-content: center;
-  margin-top: 5px;
 }
 
 header nav img {
-  width: 7%;
+  width: 6%;
 }
 
 header nav div {
@@ -40,7 +43,7 @@ header nav div ul li {
 .navbar {
   display: flex;
   justify-content: space-around;
-  width:85%;
+  width:100%;
   background-color: #242424;
   color: white;
   border-radius: 5px;
@@ -249,19 +252,42 @@ button:hover {
 }
 
 /* INICIO */
-.inicio-container {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
+
+
+
+.section-video video{
+  width: 33.33%;
+  object-fit: cover;
+  z-index: -10;
+  filter: brightness(60%); /* 100% es normal, 60% lo oscurece */
+} 
+
+.content {
+  position: absolute;       /* Para colocarlo encima del video */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;            /* Activar flexbox */
+  justify-content: center;  /* Centrar en vertical */
+  align-items: center;      /* Centrar en horizontal */
+  flex-direction: column;   /* Apilar elementos en columna */
+
+  color: white;             /* Texto blanco */
+  text-align: center;       /* Centrado de texto */
 }
 
-.inicio-container .box-one #carouselExample {
-  width: 150%;
+.content h1 {
+  font-size: 3rem;   /* ~text-5xl */
+  font-weight: bold; /* font-bold */
 }
 
-.inicio-container .box-one #carouselExample img{
-  width: 100%;
+.content p {
+  font-size: 1.25rem; /* ~text-xl */
+  margin-top: 1rem;   /* mt-4 */
 }
+
 
 /* PLANES */
 
@@ -271,15 +297,16 @@ button:hover {
   color: #f9f9f9;
   display: flex;
   flex-direction: column;
-  margin:100px 0px 100px 0px;
+  margin:50px 0px 100px 0px;
 }
 
 
 .planes-sec {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
+  padding: 25px;
 }
 
 
@@ -307,6 +334,30 @@ button:hover {
   text-align: center;
 }
 
+/* SOBRE MI */
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0px 80px 0px;
+}
+
+.about-me .img-me {
+  width: 50%;
+}
+
+.about-me .img-me img {
+  width: 60%;
+}
+
+.about-me .info-me {
+  width: 60%;
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 20px;
+  padding: 50px;
+}
 
 /* PRODUCTOS */
 

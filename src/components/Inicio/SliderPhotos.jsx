@@ -3,51 +3,26 @@ import React from 'react'
 const SliderPhotos = () => {
   return (
     <>
-      <div className="inicio-container">
-        <section className="box-one">
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/inicio/banner.jpg" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/inicio/banner.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section>
-      </div>
+      <section className="section-video">
+        {/* Video de fondo */}
+        <video autoPlay muted loop className="video">
+          <source src="./video/0821.mp4" type="video/mp4" />
+        </video>
+        <video autoPlay muted loop className="video">
+          <source src="./video/0822.mp4" type="video/mp4" />
+        </video>
+        <video autoPlay muted loop className="video">
+          <source src="./video/0823.mp4" type="video/mp4" />
+        </video>
+
+        {/* Texto encima */}
+        <div class="content">
+          <h1>FUERZA + MENTE</h1>
+          <p className="text-xl mt-4">
+            Entrena y superate cada dia
+          </p>
+        </div>
+      </section>
     </>
   );
 }
