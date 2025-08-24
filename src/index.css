@@ -344,7 +344,7 @@ button:hover {
 }
 
 .about-me .img-me {
-  width: 50%;
+  width: 35%;
 }
 
 .about-me .img-me img {
@@ -357,6 +357,44 @@ button:hover {
   color: #f9f9f9;
   font-size: 20px;
   padding: 50px;
+}
+
+/* PRODUCTOS */
+
+.section-card {
+  display: flex;
+}
+
+.section-card article {
+  width: 33%;
+  object-fit: cover;
+  z-index: -10;
+  filter: brightness(40%);
+}
+
+.section-card article img {
+  width: 100%;
+}
+
+.section-card .card-title {
+  position: absolute;       /* Para colocarlo encima del video */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;            /* Activar flexbox */
+  justify-content: center;  /* Centrar en vertical */
+  align-items: center;      /* Centrar en horizontal */
+  flex-direction: column;   /* Apilar elementos en columna */
+
+  color: white;             /* Texto blanco */
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3rem;   /* ~text-5xl */
+  font-weight: bold; /* font-bold */
 }
 
 /* PRODUCTOS */

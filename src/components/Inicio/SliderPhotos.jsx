@@ -15,7 +15,6 @@ const SliderPhotos = () => {
           <source src="./video/0823.mp4" type="video/mp4" />
         </video>
 
-        {/* Texto encima */}
         <div class="content">
           <h1>FUERZA + MENTE</h1>
           <p className="text-xl mt-4">
