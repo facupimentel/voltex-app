@@ -9,9 +9,9 @@ const Inicio = () => {
   return (
     <>
       <AboutMe/>
+      <Sections/>
       <SliderPhotos/>
       <Planes/>
-      <Sections/>
     </>
   );
 };

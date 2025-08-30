@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom"
-import logo from "../../img/header/logo1.png"
 import Cart from "./Cart";
 import { useUser } from "../../context/UserContext";
 
@@ -28,7 +27,7 @@ const NavBar = ({totalProductos}) => {
     <>
       <header>
         <nav className="navbar">
-          <img src={logo} alt="" />
+          <img src='/img/header/logo1.png' alt="" />
           <ul>
             <li><NavLink to="/" className={({isActive})=>(isActive ? 'active' : '')}>Inicio</NavLink></li>
             <li><NavLink to="/productos" className={({isActive})=>(isActive ? 'active' : '')}>Productos</NavLink></li>
@@ -45,7 +44,7 @@ const NavBar = ({totalProductos}) => {
             }}
             onClick={handleLoginLogout}
           >
-            {user?.isLoggedIn ? "logout" : "login"}
+            {user?.isLoggedIn ? "Logout" : "Login"}
           </button>
           
 
