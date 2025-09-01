@@ -4,26 +4,26 @@ const Sections = () => {
   return (
     <>
       <section className="section-card">
-        <div>
-          <img src="/img/inicio/card.png" alt="" />
-          <h1>Card Section</h1>
+        <article>
+          <h1>Rutinas</h1>
           <p>description de prueba</p>
-        </div>
-        <div>
-          <img src="/img/inicio/card.png" alt="" />
-          <h1>Card Section</h1>
+        </article>
+
+        <article>
+          <h1>Tips</h1>
           <p>description de prueba</p>
-        </div>
-        <div>
-          <img src="/img/inicio/card.png" alt="" />
-          <h1>Card Section</h1>
+        </article>
+
+        <article>
+          <h1>Comidas</h1>
           <p>description de prueba</p>
-        </div>
-        <div>
-          <img src="/img/inicio/card.png" alt="" />
-          <h1>Card Section</h1>
+        </article>
+
+        <article>
+          <h1>Contacto</h1>
           <p>description de prueba</p>
-        </div>
+        </article>
+
       </section>
     </>
   );

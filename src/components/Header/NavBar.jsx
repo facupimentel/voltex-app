@@ -27,7 +27,7 @@ const NavBar = ({totalProductos}) => {
     <>
       <header>
         <nav className="navbar">
-          <img src='/img/header/logo1.png' alt="" />
+          <img src='/img/header/logonegro.png' alt="" />
           <ul>
             <li><NavLink to="/" className={({isActive})=>(isActive ? 'active' : '')}>Inicio</NavLink></li>
             <li><NavLink to="/productos" className={({isActive})=>(isActive ? 'active' : '')}>Productos</NavLink></li>
