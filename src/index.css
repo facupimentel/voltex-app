@@ -340,7 +340,7 @@ button:active {
   text-align: center;
 }
 
-/* SOBRE MI */
+/* Bienvenida */
 
 .about-me {
   display: flex;
@@ -395,7 +395,7 @@ button:active {
   color: white;
   border-radius: 16px;
   width: 400px;          /* Ancho fijo de la card */
-  height: 70vh;          /* Ocupa el 80% de la pantalla */
+  height: 60vh;          /* Ocupa el 80% de la pantalla */
   padding: 30px;
   text-align: start;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -412,7 +412,42 @@ button:active {
 }
 
 
+/* FORMULARIO */
 
+.section-form {
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
+
+.section-form .formulario {
+  padding: 30px;
+  width: 50%;
+  background-color: #1c1c1c;
+  color: #ccc;
+}
+
+.section-form .formulario form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.section-form .formulario form label input, .section-form .formulario form label textarea{
+  border-color: #4caf50;
+}
+
+
+.section-form .texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ccc;
+  width: 50%;
+  padding: 20px;
+}
 
 
 /* PRINCIPAL */

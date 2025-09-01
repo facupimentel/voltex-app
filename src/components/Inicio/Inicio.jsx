@@ -4,6 +4,7 @@ import SliderPhotos from "./SliderPhotos";
 import Planes from "./Planes";
 import AboutMe from "./AboutMe";
 import Sections from "./Sections";
+import { Contact } from "./Contact";
 
 const Inicio = () => {
   return (
@@ -12,6 +13,7 @@ const Inicio = () => {
       <Sections/>
       <SliderPhotos/>
       <Planes/>
+      <Contact/>
     </>
   );
 };
