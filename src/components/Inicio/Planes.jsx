@@ -14,15 +14,15 @@ const Planes = () => {
       <section className="planes-sec">
         <article className="planes-card">
           <div className="card-title">
-            <h1>PLAN ESTANDAR</h1>
-            <p>$20.000 por Mes</p>
-            <p>Primeros 3 meses 20% OFF</p>
+            <h1>Rutina Personalizada</h1>
+            <p>$25.000</p>
+            <p>Rutina estructurada para que utilizarla tu mismo.</p>
           </div>
           <div className="card-items">
             <ul>
               <p>● Rutina Personalizada</p>
               <p>● Tips - Consejos</p>
-              <p>● Videos Explicativos</p>
+              <p>● Cuadro de Progresos</p>
             </ul>
           </div>
           <div className="card-p">
@@ -37,7 +37,7 @@ const Planes = () => {
 
         <article className="planes-card">
           <div className="card-title">
-            <h1>PLAN PREMIUN</h1>
+            <h1>Plan Premiun</h1>
             <p>$40.000 por Mes</p>
             <p>Primeros 3 meses 20% OFF</p>
           </div>
@@ -60,7 +60,7 @@ const Planes = () => {
 
         <article className="planes-card">
           <div className="card-title">
-            <h1>PLAN PLATINUM</h1>
+            <h1>Plan Platinum</h1>
             <p>$60.000 por Mes</p>
             <p>Primeros 3 meses 20% OFF</p>
           </div>
@@ -69,6 +69,7 @@ const Planes = () => {
               <p>● Rutina Personalizada</p>
               <p>● Tips - Consejos</p>
               <p>● Videos Explicativos</p>
+              <p>● Seguimientos / Asesorias</p>
             </ul>
           </div>
           <div className="card-p">

@@ -307,22 +307,22 @@ button:active {
 
 
 .planes-sec {
-  display: flex;
+   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch; 
+  flex-wrap: wrap; 
   gap: 50px;
   padding: 25px;
   margin:100px 0px 100px 0px;
 }
 
-
 .planes-card {
   background-color: #1c1c1c;
   color: #f9f9f9;
   padding: 20px;
-  width: 60%;
   border-radius: 5px;
 }
+
 
 .planes-card .card-title {
   font-size: 15px;
@@ -423,7 +423,6 @@ button:active {
 .section-form .formulario {
   padding: 30px;
   width: 50%;
-  background-color: #1c1c1c;
   color: #ccc;
 }
 
@@ -431,11 +430,22 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
+.section-form .formulario form label {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
 
-.section-form .formulario form label input, .section-form .formulario form label textarea{
-  border-color: #4caf50;
+.section-form .formulario form label input{
+  border-color: #131d14;
+}
+
+.section-form .formulario form label textarea {
+  background-color: #131d14;
+  border-radius: 5px;
 }
 
 

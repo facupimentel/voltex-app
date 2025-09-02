@@ -15,7 +15,7 @@ export const Contact = () => {
               <input type="email" name="email" required />
             </label>
             <label>
-              Mensaje:
+              Comentanos un poco sobre tus metas y objetivos
               <textarea name="mensaje" required></textarea>
             </label>
             <button type="submit">Enviar</button>
