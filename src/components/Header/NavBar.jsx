@@ -30,12 +30,12 @@ const NavBar = ({totalProductos}) => {
           <img src='/img/header/logonegro.png' alt="" />
           <ul>
             <li><NavLink to="/" className={({isActive})=>(isActive ? 'active' : '')}>Inicio</NavLink></li>
-            <li><NavLink to="/productos" className={({isActive})=>(isActive ? 'active' : '')}>Productos</NavLink></li>
-            <li><NavLink to="/nosotros" className={({isActive})=>(isActive ? 'active' : '')}>Nosotros</NavLink></li>
+            <li><NavLink to="/planes" className={({isActive})=>(isActive ? 'active' : '')}>Planes</NavLink></li>
+            <li><NavLink to="/rutinas" className={({isActive})=>(isActive ? 'active' : '')}>Rutinas</NavLink></li>
             <li><NavLink to="/contactos" className={({isActive})=>(isActive ? 'active' : '')}>Contactos</NavLink></li>
           </ul>
 
-          <Cart totalProductos={totalProductos} />
+          {/* <Cart totalProductos={totalProductos} /> */}
 
           <button
             style={{
@@ -46,8 +46,6 @@ const NavBar = ({totalProductos}) => {
           >
             {user?.isLoggedIn ? "Logout" : "Login"}
           </button>
-          
-
         </nav>
       </header>
     </>

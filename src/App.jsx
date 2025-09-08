@@ -1,6 +1,5 @@
 import Header from "./components/Header/Header";
 import Inicio from "./components/Inicio/Inicio";
-import MainProductos from "./components/Productos/MainProductos";
 import ItemDetailContainer from "./components/Productos/ItemDetailContainer";
 import Nosotros from "./components/Nosotros/Nosotros";
 import Contactos from "./components/Contactos/contactos";
@@ -14,6 +13,7 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
+import Planes from "./components/Inicio/Planes";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/productos" element={<MainProductos />} />
+          <Route path="/planes" element={<Planes />} />
           <Route
             path="/detalle/:id"
             element={

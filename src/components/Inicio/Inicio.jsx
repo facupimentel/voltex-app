@@ -12,7 +12,6 @@ const Inicio = () => {
       <AboutMe/>
       <Sections/>
       <SliderPhotos/>
-      <Planes/>
       <Contact/>
     </>
   );

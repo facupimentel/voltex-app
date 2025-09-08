@@ -313,14 +313,18 @@ button:active {
   flex-wrap: wrap; 
   gap: 50px;
   padding: 25px;
-  margin:100px 0px 100px 0px;
+  margin:60px 0px 10px 0px;
 }
 
 .planes-card {
-  background-color: #1c1c1c;
+  max-width: 400px; 
+  background-color: #1d1c1c;
   color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
 }
 
 
@@ -371,6 +375,7 @@ button:active {
 }
 
 .about-me .info-me {
+  margin-top: 60px;
   width: 40%;
   text-align: start;
   color: #f9f9f9;
@@ -416,8 +421,10 @@ button:active {
 
 .section-form {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 35px;
+  height: 100vh;
 }
 
 .section-form .formulario {
@@ -430,22 +437,29 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+  gap: 10px;  
 }
 
 .section-form .formulario form label {
   display: flex;
   justify-content: start;
   flex-direction: column;
+  padding: 0px;
+}
+
+.section-form .formulario form button:hover {
+background-color: #215923;
 }
 
 .section-form .formulario form label input{
-  border-color: #131d14;
+  border-color: #b8b8b8;
+  border-radius: 10px;
 }
 
 .section-form .formulario form label textarea {
-  background-color: #131d14;
-  border-radius: 5px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 
@@ -453,10 +467,14 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   color: #ccc;
-  width: 50%;
-  padding: 20px;
+  width: 35%;
+  gap: 50px;
+}
+
+.section-form .texto h3 {
+  color:#b8b8b8;
+  font-size: 45px;  
 }
 
 
@@ -621,17 +639,18 @@ h1 {
 /*footer */
 
 footer {
-  background-color: #242424;
+  background-color: #111111;
   color: whitesmoke;
   display: flex;
   justify-content: center;
+  height: 55vh;
   border-radius: 2px 2px 0px 0px;
   align-items: center;
+  box-shadow: 0px 0px 30px 0px rgba(0, 255, 0, 0.6);
+  padding: 5px;
 }
 
-footer .div-categorias,
-footer .div-contactos,
-footer .div-soporte {
+footer div {
   gap: 13px;
   display: flex;
   flex-direction: column;
@@ -639,17 +658,15 @@ footer .div-soporte {
   text-align: center;
   width: 30%;
   margin-top: 15px;
-  margin-bottom: 15px;
 }
 
-footer div h3,
-footer h3 {
-  font-size: 25px;
+footer div h3 {
+  color: #00FF00;
 }
 
 footer div a {
   width: 40%;
   text-decoration: none;
-  color: #a1ef00;
-  font-size: 13px;
+  color: #fff;
+  font-size: 20px;
 }
